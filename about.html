@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>E-Commerce Website</title>
+     <link rel="stylesheet" href="style.css">
+     <!--GOOGLE FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <!--FONT AWESOME-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+ </head>
+ <body>
+     <!----- NAVBAR ----->     
+     <div class="">
+         <div class="container">
+             <div class="navbar">
+                 <div class="logo">
+                     <img src="images/logo.webp" width="100px">
+                 </div>
+                 <nav>
+                     <ul id="MenuItems">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Contact</a></li>
+                         <li><a href="#">Account</a></li>
+                     </ul>
+                 </nav>
+                 <img src="images/cart.png" width="30px" height="30px">                 
+                 <img src="images/menu.png" width="28px" height="30px" class="menu-icon" onclick="menutoggle()">
+             </div>
+         </div>
+     </div>
+     <!------ INFORMATION ----->
+     <div class="account-page">
+         <div class="container">
+             <div class="row">
+                 <div class="col-2">
+                     <img src="images/main.png" width="50%">
+                 </div>
+                 <div class="col-2">
+                 <h1>About Us</h1>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quidem voluptatibus expedita sint, veniam ab ipsam
+                     accusamus dolorem et suscipit delectus architecto sit incidunt id nulla blanditiis eveniet dolorum commodi?
+                 </p>
+             </div>
+         </div>
+     </div>
+    </div>
+
+     <!------ FOOTER ----->
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <!-- 01 -->
+                 <div class="footer-col-1">
+                     <h3>Download Our App</h3> 
+                     <p>Download App for Android and ios mobile phone.</p>
+                     <div class="app-logo">
+                         <img src="images/band.png">
+                         <img src="images/band.png">
+                     </div>
+                 </div>
+                 <!-- 02 -->
+                 <div class="footer-col-2">
+                     <img src="images/band.png"> 
+                     <p>Our Purpose is to Sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                 </div>
+                 <!-- 03 -->
+                 <div class="footer-col-3">
+                     <h3>Useful Links</h3> 
+                     <ul>
+                         <li>Coupons</li>
+                         <li>Blog Posts</li>
+                         <li>Return Policy</li>
+                         <li>Join Affiliate</li>
+                     </ul>
+                 </div>
+                 <!-- 04 -->
+                 <div class="footer-col-4">
+                     <h3>Follow Us</h3> 
+                     <ul>
+                         <li>Facebook</li>
+                         <li>Twitter</li>
+                         <li>Instagram</li>
+                         <li>YouTube</li>
+                     </ul>
+                 </div>
+             </div>
+             <hr>
+             <p class="copyright">Copyright 2023</p>
+         </div>
+     </div>
+     <!------ Js for Toggle Menu ----->
+      <script>
+         var MenuItems = document.getElementById("MenuItems");
+         MenuItems.style.maxHeight = "0px";
+         function menutoggle(){
+             if(MenuItems.style.maxHeight == "0px"){
+                 MenuItems.style.maxHeight = "200px";
+                }
+             else{
+                 MenuItems.style.maxHeight = "0px";
+                }   
+            }
+      </script>
+ </body>
+</html>   
